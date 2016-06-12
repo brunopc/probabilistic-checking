@@ -1,4 +1,4 @@
-# Usage: python3 wizard.py n t d
+# Usage: python3 wizard.py n m t d
 # where n: dimension of the matrix
 #       m: number of test cases
 #       t: number of randomized checkings
