@@ -1,3 +1,7 @@
+# Prints the Cayley Table of a non-associative operation of size n.
+# The result is intended to be piped to the checkers as a test-case.
+# Usage: python3 non_associative.py n
+
 import numpy as np
 import sys
 

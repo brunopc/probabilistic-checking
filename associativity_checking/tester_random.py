@@ -1,3 +1,11 @@
+# Tests the randomized algorithm for checking associativity described by
+# Rajagopalan and Schulman.
+
+# Usage: Receives as an argument t, the number of times we repeat the
+# algorithm to ensure a small probability of an incorrect answer. In the
+# standard input, we receive n and A, the Cayley Table of an operation on
+# a n-element set.
+
 import numpy as np
 import sys
 from associativity_checker import *

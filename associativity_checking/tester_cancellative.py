@@ -1,3 +1,9 @@
+# Tests the algorithm for checking associativity in the cancellative case.
+# No randomization involved.
+
+# Usage: In the standard input, we receive n and A, the Cayley Table
+# of an operation on a n-element set.
+
 import numpy as np
 import sys
 from associativity_checker import *
