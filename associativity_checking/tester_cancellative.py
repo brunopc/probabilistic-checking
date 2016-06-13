@@ -12,8 +12,11 @@ def main(argv):
             A[i,j] = input_line[j]
 
     checker = AssociativityChecker(A, n)
-    print("Is it cancellative?", checker.is_cancellative())
-    print("Is it associative?", checker.is_associative_deterministic()) 
+    cancellative = checker.is_cancellative()
+    print("Is it cancellative?", cancellative)
+    associative = checker.is_associative_deterministic()
+    print("Is it associative?", associative)
+    print("Is it a group?", cancellative and associative)
     print("Generators:", checker.generators())
 
 if __name__ == '__main__':

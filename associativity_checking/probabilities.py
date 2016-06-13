@@ -1,3 +1,10 @@
+# Calculates the average error of the randomized checking, when we repeat
+# the algorithm t number of times. We try it for t = 1, 2, ..., 10.
+
+# Usage: receives as argument the number m of times we test the algorithm
+# for each t. In the standard input, we receive n and A, the Cayley Table
+# of an operation on a n-element set.
+
 import numpy as np
 import sys
 from associativity_checker import *
@@ -13,7 +20,6 @@ def main(argv):
             A[i,j] = input_line[j]
 
     checker = AssociativityChecker(A, n)
-
     print("Probability of failure, testing", m, "times each:")
     for t in range(1,11):
         ctr = 0
