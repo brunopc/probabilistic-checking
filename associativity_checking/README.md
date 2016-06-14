@@ -38,8 +38,6 @@ sys	0m0.404s
  
 `time python3 cyclic_group.py 1000 | python3 tester_cancellative.py`
 
-##### Output
-
 > Is it cancellative? True  
 Is it associative? True  
 Is it a group? True  
@@ -47,6 +45,11 @@ Is it a group? True
 >real	0m5.168s  
 user	0m5.992s  
 sys	0m0.372s  
+
+This case was a bit faster than the randomized version because of a
+slightly higher constant, and because the generator set found by the
+deterministic algorithm was very small (indeed, a cyclic group has a
+generator set of size 1).
 
 As the operation created in `not_associative.py` is not cancellative, we cannot guarantee a O(n^2\*lgn) bound for this case and the code takes way too much time to run.
 
