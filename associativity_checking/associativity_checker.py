@@ -81,6 +81,7 @@ class AssociativityChecker:
         return gen
 
     # True if the operation is associative.
+    # O(n^2*lgn) if the operation is cancellative.
     def is_associative_deterministic(s):
         gs = s.generators()
         for x in range(s.n):

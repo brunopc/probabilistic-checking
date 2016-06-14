@@ -3,7 +3,8 @@
 
 # Usage: receives as argument the number m of times we test the algorithm
 # for each t. In the standard input, we receive n and A, the Cayley Table
-# of an operation on a n-element set.
+# of an operation on a n-element set. The operation must be
+# non-associative.
 
 import numpy as np
 import sys
