@@ -1,4 +1,6 @@
 # Tests the algorithm for checking associativity in the cancellative case.
+# Note that it also works when it is not cancellative, but we cannot
+# guarantee a O(n^2*lgn) complexity.
 # No randomization involved.
 
 # Usage: In the standard input, we receive n and A, the Cayley Table
@@ -23,7 +25,6 @@ def main(argv):
     associative = checker.is_associative_deterministic()
     print("Is it associative?", associative)
     print("Is it a group?", cancellative and associative)
-    print("Generators:", checker.generators())
 
 if __name__ == '__main__':
     np.set_printoptions(precision=5)

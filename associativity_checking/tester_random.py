@@ -21,7 +21,11 @@ def main(argv):
             A[i,j] = input_line[j]
 
     checker = AssociativityChecker(A, n)
-    print("Is it associative?", checker.is_associative_random(t))
+    cancellative = checker.is_cancellative()
+    print("Is it cancellative?", cancellative)
+    associative = checker.is_associative_random(t)
+    print("Is it associative?", associative)
+    print("Is it a group?", cancellative and associative)
 
 if __name__ == '__main__':
     np.set_printoptions(precision=5)

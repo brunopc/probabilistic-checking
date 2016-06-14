@@ -21,7 +21,8 @@ def main(argv):
             A[i,j] = input_line[j]
 
     checker = AssociativityChecker(A, n)
-    print("Probability of failure, testing", m, "times each:")
+    print("Number of randomized checkings | Frequency of wrong answers")
+    print("--- | ---")
     for t in range(1,11):
         ctr = 0
         for _ in range(m):

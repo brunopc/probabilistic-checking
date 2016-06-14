@@ -8,7 +8,7 @@ import sys
 def main(argv):
     n = int(argv[1])
     A = np.zeros([n,n], dtype=np.int)
-    A[1,2] = 1
+    A[n-2,n-1] = n-2
     print(n)
     for i in range(n):
         for j in range(n):
